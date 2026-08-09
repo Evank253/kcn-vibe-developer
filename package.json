@@ -1,0 +1,31 @@
+{
+  "name": "kcn-vibe-developer",
+  "version": "0.1.0",
+  "private": true,
+  "description": "KCN Vibe Developer + Coder (merged) — human-governed AI coding system with a Stripe-driven token + soulbound NFT agent economy on Base.",
+  "type": "commonjs",
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "node": "hardhat node",
+    "deploy:base-sepolia": "hardhat run scripts/deploy.js --network baseSepolia",
+    "deploy:base": "hardhat run scripts/deploy.js --network base",
+    "server": "node server/index.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "@openzeppelin/contracts": "^5.6.1",
+    "dotenv": "^17.4.2",
+    "hardhat": "^2.29.0",
+    "solc": "^0.8.24"
+  },
+  "dependencies": {
+    "ethers": "^6.17.0",
+    "express": "^5.2.1",
+    "stripe": "^22.4.0"
+  }
+}
